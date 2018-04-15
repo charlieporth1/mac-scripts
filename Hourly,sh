@@ -1,0 +1,7 @@
+#bash
+#Hourly
+#clean ram
+sync && sudo purge
+sleep 10s
+pkill MacAssistant 
+open -a  /Applications/MacAssistant.app/
