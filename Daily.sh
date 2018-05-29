@@ -8,3 +8,9 @@ npm update
 port selfupdate
 port upgrade outdated
 sudo updatedb
+
+
+#git 
+cd /Users/charlieporth/Programs/
+git add .
+git push -u origin master

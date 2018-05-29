@@ -1,1 +1,1 @@
-sudo spoof-mac set DE:65:90:d9:89:05 en0
+sudo spoof-mac set DE:b2:a1:4a:30:19 en0

@@ -1,7 +1,7 @@
 #mobiledevice
 brew tap caskroom/cask
 brew cask install google-chrome
-brew install  wakeonlan  mosh nexus nutcracker sendemail  tidy-html5 truecrack tty-solitaire tty-clock typespeed hatari spoof-mac rsync rclone 
+brew install wakeonlan mosh nexus nutcracker sendemail tidy-html5 truecrack tty-solitaire tty-clock typespeed hatari spoof-mac rsync rclone 
 brew install advancescan aescrypt-packetizer aescrypt aespipe aircrack-ng airspy ansiweather  
 brew install apktool arp-scan arp-sk arpack arping arpoison ascii atari800 automake autopsy autossh 
 brew install base64 bltool bluepill blueutil bower brew-cask-completion bew-gem brew-pip 
@@ -66,7 +66,17 @@ brew install root sendmail shairport shairport-sync sip sipcalc slackcat
 brew install socat squashfs squid sshrc ssh-copy-id sslh ssllabs-scan sslmate
 brew install sslscan sslyze tcpdump tcpflow tcping tcpkali tcpreplay tcpsplit 
 brew install tcpstat tcptrace tcptraceroute tcptunnel tcptrack telnet thefuck 
-brew install the harvester tidy-html5 tor torsocks transcrypt tree truecrack 
+brew install theharvester tidy-html5 tor torsocks transcrypt tree truecrack 
 brew install tty-clock tty-solitaire tundra u-boot-tools wiggle wireguard-tools
 brew install wirouter_keyrec wolfssl wordnet woof wp-cli wpcli-completion 
 brew install wpscan x11vnc x264 x265 zlib zssh zsync 
+
+
+brew install wordnet wordplay antiword autoenv bsdiff bsdmake c2048 cracklib 
+brew install ddd disktype dnstop fcrackzip gnu-which gnu-sed gnu-time gnu-tar 
+brew install hostdb netdata nethack netcat netcat6 nethacked jam libarchive 
+brew install libav libchaos libconfig libffi libopennet  zzz 
+ brew install rustc-completion rust docker  cargo-completion 
+brew install git-utils cvsutils patchutils nfcutils  icoutils desktop-file-utils t1utils num-utils  hfsutils 
+#moreutils idutils
+brew install c2048 chkrootkit 

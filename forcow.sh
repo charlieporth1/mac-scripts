@@ -1,3 +1,3 @@
 fortune | cowsay
-
-fortune | cowsay -f tux
+ortune | cowsay -f ghostbusters.cow   | lolcat
+fortune | cowsay -f tux | lolcat

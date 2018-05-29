@@ -14,6 +14,7 @@ sudo rm -rf /var/db/spindump
 sudo rm -rf /var/db/diagnostics
 sudo rm -rf /var/db/dyld 
 sudo rm -rf ~/.Trash/
+brew cleanup
 
 
 echo done 
