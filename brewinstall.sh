@@ -79,4 +79,14 @@ brew install libav libchaos libconfig libffi libopennet  zzz
  brew install rustc-completion rust docker  cargo-completion 
 brew install git-utils cvsutils patchutils nfcutils  icoutils desktop-file-utils t1utils num-utils  hfsutils 
 #moreutils idutils
-brew install c2048 chkrootkit 
+brew install c2048 chkrootkit  ansiweather  arm-linux-gnueabihf-binutils 
+brew install ascii asciinema asciinema bluepill c2048 cake calc chrome-cli 
+brew install chrome-export cityhash coreos-ct corectl dfu-util dfu-programmer 
+brew install dhcpdump dhcping dhex dex dialog diction dnstracer dnstop dosbox 
+brew install emacs emacs-clang-complete-async emojify ettercap exif exiftags 
+brew install exiftool fbi-serverfiles fcrackzip findutils flac flashrom 
+brew install fortune geoip geoipupdate ghex gpsd gpsim hachoir-metadata 
+brew install hashcat hashcash hello hexcurse hexedit iozone jam jailkit john 
+brew install john-jumbo kubernetes-helm kubernetes-cli md5sha1sum md5deep memcache-top
+brew install memcached memcacheq minicom mosh nfcutils ncrack nsnake  ntfs-3g 
+brew install nyancat  patchutils png2ico  protobuf  protobuf-swift pv 
