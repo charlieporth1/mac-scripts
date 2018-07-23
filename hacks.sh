@@ -116,3 +116,4 @@ defaults write NSGlobalDomain NSWindowResizeTime .1
 #killall Dock
 
 
+#sudo defaults write com.apple.loginwindow LoginHook /path/to/script
