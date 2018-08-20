@@ -90,3 +90,8 @@ brew install hashcat hashcash hello hexcurse hexedit iozone jam jailkit john
 brew install john-jumbo kubernetes-helm kubernetes-cli md5sha1sum md5deep memcache-top
 brew install memcached memcacheq minicom mosh nfcutils ncrack nsnake  ntfs-3g 
 brew install nyancat  patchutils png2ico  protobuf  protobuf-swift pv 
+brew tap choppsv1/term24
+brew install choppsv1/term24/emacs
+brew install choppsv1/term24/vim
+brew install choppsv1/term24/tmux
+brew install choppsv1/term24/emacs-mac
