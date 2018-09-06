@@ -11,7 +11,7 @@ brew install cmake cmatrix cocoapods coreutils cpulimit cputhrottle curl darksky
 brew install dateutils ddrescue debianutils dex dex2jar dns2tcp docker dosbox dscanner 
 brew install e2fsprogs e2tools ettercap ext4fuse ext2fuse fabric fabric-completion fastjar fbi-servefiles    
 brew install frackzip figlet firebase-cli flac ffmpeg flashrom fortune gcc gdrive geckodriver gem-completion geoip geoipupdate
-brew install git gnuradio gnupg googler gpsim gpsd gputils gzip hackrf hadoop hamlib 
+brew install git gnuradio gnupg googler gpsim gpsd gputils gzip hackrf  hamlib 
 brew install hardlink hardlink-osx hashcat hello htmlcleaner htmlcompressor httrack hydra hyperscan 
 brew install ike-scan imessage-ruby inetutils ios-deploy jam john john-jumbo jpeg kettle 
 brew install kotlin kubernetes-cli kubernetes-helm lcrack libfabric libgweather libimobiledevice
@@ -95,3 +95,5 @@ brew install choppsv1/term24/emacs
 brew install choppsv1/term24/vim
 brew install choppsv1/term24/tmux
 brew install choppsv1/term24/emacs-mac
+brew install aircrack-ng  nikto colordiff debianutils distribution espeak  
+brew install exiftool exiftag gr-osmosdr hashcash heartbeat

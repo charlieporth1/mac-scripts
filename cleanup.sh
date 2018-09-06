@@ -14,8 +14,15 @@ sudo rm -rf /var/db/spindump
 sudo rm -rf /var/db/diagnostics
 sudo rm -rf /var/db/dyld 
 sudo rm -rf ~/.Trash/
-brew cleanup
+sudo rm -rf /Previous\ System/
+sudo rm -rf /var/log/asl/*
+sudo rm -rf /var/log/install.log
+sudo rm -rf /var/db/receipts
+sudo rm -rf /var/db/uuidtext
 
+sudo -u charlieporth "brew cleanup"
 
 echo done 
 echo system should be clean
+df -h
+
