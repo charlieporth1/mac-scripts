@@ -97,3 +97,13 @@ brew install choppsv1/term24/tmux
 brew install choppsv1/term24/emacs-mac
 brew install aircrack-ng  nikto colordiff debianutils distribution espeak  
 brew install exiftool exiftag gr-osmosdr hashcash heartbeat
+brew cask install grammarly adguard android-platform-tools audio-hijack battery-time-remaining battery-report 
+brew cask install chameleon-ssd-optimizer chrome-remote-desktop-host chrome-devtools crunch cubicsdr cutesdr dnscrypt dsp-radio 
+brew cask install emacs filezilla fing firebase-admin google-cloud-sdk google-chrome google-backup-and-sync 
+brew cask install google-adwords-editor google-earth-pro google-earth-web-plugin google-featured-photos google-hangouts 
+brew cask install google-drive-file-stream google-nik-collection google-trends google-web-designer hacker-menu hackety-hack 
+brew cask install hackhands hazel3 sdrdx icolors intel-haxm intel-power-gadget ip-scanner ios-console ipsecuitas iridium jitouch 
+brew cask install kubernetic leap-motion clocksaver menubar-colors menubarfilter metasploit meteorologist minecraft 
+brew cask install minecraft-server minecraftpe mkchromecast mycloud myphone osxfuse powershell  power-manager-pro  
+brew cask install protonmail-bridge pulse-sms satellite-eyes sketch slack smcfancontrol stargazer tor-browser torguard 
+brew cask install veracrypt wakeonlan windows95 wine-stable xquartz xscreensaver zurl 
