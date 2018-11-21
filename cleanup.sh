@@ -21,7 +21,6 @@ sudo rm -rf /var/log/asl/*
 sudo rm -rf /var/log/install.log
 sudo rm -rf /var/db/receipts/*
 sudo rm -rf /var/db/uuidtext/*
-sudo -u charlieporth "/usr/local/bin/brew cleanup"
 sudo rm -rf /.fseventsd/
 sudo rm -rf /var/folder/*
 sudo rm -rf /tmp/*
@@ -37,7 +36,10 @@ sudo rm -rf ~/.electron/
 sudo rm -rf /Users/*/.electron/
 sudo rm -rf ~/.meteor 
 sudo rm -rf /Users/*/.meteor 
-
+#sudo rm -rf /var/folders/*
+#sudo chmod a+x -R /var/folders
+#sudo chown charlieporth -R  /var/folders/
+#sudo chown charlieporth -R  /var/folders/*
+#sudo -u charlieporth "/usr/local/bin/brew cleanup"
 echo done 
 echo system should be clean
-df -h

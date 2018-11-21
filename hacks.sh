@@ -4,7 +4,7 @@ defaults write com.apple.dock "expose-group-by-app" -bool true
 defaults write com.apple.dock expose-animation-duration -float 0.1
 defaults write NSGlobalDomain AppleFontSmoothing -int 2
 defaults write com.apple.BezelServices kDimTime -int 300
-defaults write NSGlobalDomain KeyRepeat -int 0
+defaults write NSGlobalDomain KeyRepeat -float 0.000000000000000000000001
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 sudo defaults write /Library/Preferences/.GlobalPreferences.plist _HIEnableThemeSwitchHotKey -bool true
 defaults write com.apple.DiskUtility DUDebugMenuEnabled -bool true
@@ -53,7 +53,7 @@ defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
 
 
 
-
+sudo spctl --master-disable
 
 # Disable opening and closing window animations
 # defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false

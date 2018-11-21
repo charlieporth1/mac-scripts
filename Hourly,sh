@@ -2,7 +2,7 @@
 #Hourly
 #clean ram
 #sync && sudo purge
-sync &&  sudo /usr/sbin/purge
-sleep 10s
+#sync &&  sudo /usr/sbin/purge
+#sleep 10s
 pkill MacAssistant 
 open -a  /Applications/MacAssistant.app/
