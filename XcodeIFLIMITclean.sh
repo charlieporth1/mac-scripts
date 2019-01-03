@@ -6,7 +6,7 @@ Watched_Directory=/Users/charlieporth/Library/Developer/Xcode/DerivedData/
 echo "Directory to limit="$Watched_Directory
 
 #Percentage of partition this directory is allowed to use
-Max_Directory_Percentage=0.5G
+Max_Directory_Percentage=1G
 use="$Max_Directory_Percentage"
 
 #Current size of this directory
@@ -25,13 +25,12 @@ awk '{printf("%d\n",$1 + 0.5)}')
 echo "Curent percentage used by the directory="$Directory_Percentage
 
 #number of files to be deleted every time the script loops (can be set to "1" if 
-you want to be very accurate but the script is slower)
+#you want to be very accurate but the script is slower)
 Number_Files_Deleted_Each_Loop=50
 echo "number of files to be deleted every time the script 
 loops="$Number_Files_Deleted_Each_Loop
 
-#While the current percentage is higher than allowed percentage, we delete the 
-oldest files
+#While the current percentage is higher than allowed percentage, we delete the oldest files
 while [ $Directory_Percentage -gt $Max_Directory_Percentage ] ; do
     #we delete the files
     find $Watched_Directory -type f -printf "%T@ %p\n" | sort -nr | tail 

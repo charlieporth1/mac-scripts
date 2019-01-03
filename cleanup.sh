@@ -17,12 +17,12 @@ sudo rm -rf /var/db/dyld/*
 sudo rm -rf ~/.Trash/
 sudo rm -rf /Users/*/.Trash/
 sudo rm -rf /Previous\ System/
-sudo rm -rf /var/log/asl/*
+#sudo rm -rf /var/log/asl/*
 sudo rm -rf /var/log/install.log
 sudo rm -rf /var/db/receipts/*
 sudo rm -rf /var/db/uuidtext/*
 sudo rm -rf /.fseventsd/
-sudo rm -rf /var/folder/*
+#sudo rm -rf /var/folder/*
 sudo rm -rf /tmp/*
 sudo rm -rf /Users/*/.rustup/
 sudo rm -rf /Users/*/.opam 

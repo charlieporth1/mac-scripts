@@ -117,3 +117,5 @@ defaults write NSGlobalDomain NSWindowResizeTime .1
 
 
 #sudo defaults write com.apple.loginwindow LoginHook /path/to/script
+sudo nvram boot-args=”ncl=131072″
+

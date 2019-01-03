@@ -25,13 +25,13 @@ awk '{printf("%d\n",$1 + 0.5)}')
 echo "Curent percentage used by the directory="$Directory_Percentage
 
 #number of files to be deleted every time the script loops (can be set to "1" if 
-you want to be very accurate but the script is slower)
+#you want to be very accurate but the script is slower)
 Number_Files_Deleted_Each_Loop=50
 echo "number of files to be deleted every time the script 
 loops="$Number_Files_Deleted_Each_Loop
 
 #While the current percentage is higher than allowed percentage, we delete the 
-oldest files
+#oldest files
 while [ $Directory_Percentage -gt $Max_Directory_Percentage ] ; do
     #we delete the files
     find $Watched_Directory -type f -printf "%T@ %p\n" | sort -nr | tail 
