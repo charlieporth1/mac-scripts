@@ -211,3 +211,4 @@ brew tap gsong2014/homebrew-sdr
 brew tap niobos/homebrew-sdr
 IFS=$'\n'; for package in $(brew search homebrew-sdr); do brew install $package; done
 
+for install in `pip search google cloud sdk | awk '{print $1}'`; do pip install $install; done
