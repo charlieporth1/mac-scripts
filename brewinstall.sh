@@ -46,7 +46,7 @@ brew install fabric-completion fastjar sl fbi-servefiles ffmpeg figlet
 brew install firebase-cli flac gcc gcc@4.9 gcc@5 gcc@6 gcsfuse 
 brew install gdrive findutils geoip geoipupdate git gnu-which gnupg gnuradio 
 brew install gnutls gnustep-make googler ike-scan gpsd gpsim gputils gpx 
-brew install gradle grep gtk+ gtk+3 gupnp hackrf hadoop hamlib hardlink 
+brew install gradle grep gtk+ gtk+3 gupnp hackrf  hamlib hardlink 
 brew install hardlink-osx hashcat hatari htop stop hydra hyperscan iftop 
 brew install inetutils ino ioping iproute2mac jnettop john-jumbo john jpeg   
 brew install kubernetes-cli kubeless kubernetes-helm launchctl-completion
@@ -107,3 +107,107 @@ brew cask install kubernetic leap-motion clocksaver menubar-colors menubarfilter
 brew cask install minecraft-server minecraftpe mkchromecast mycloud myphone osxfuse powershell  power-manager-pro  
 brew cask install protonmail-bridge pulse-sms satellite-eyes sketch slack smcfancontrol stargazer tor-browser torguard 
 brew cask install veracrypt wakeonlan windows95 wine-stable xquartz xscreensaver zurl 
+brew install avrdude aescrypt app-engine-java app-engine-python arm-linux-gnueabihf-binutils base64
+brew install beagle bettercap bluetoothconnector blueutil bogofilter brew-gem cityhash
+brew install cliclick click cmu-pocketsphinx cmu-sphinxbase colormake colordiff 
+brew install color-code colortail coreos-ct corectl cracklib create-dmg 
+brew install crosstool-ng dfu-programmer dfu-util dhcpdump dhcping dhex dialog
+brew install diffutils digitemp disktype dmg2img dns2tcp dnsmap docutils 
+brew install dscanner dyld-headers dylibbundler dynamips e2tools 
+brew install e2fsprogs ettercap exif exiftags exiftool exiftran ext4fuse 
+brew install findutils flac flac123 flashrom fortune fragroute gcutil 
+brew install gnutls google-benchmark google-authenticator-libpam 
+brew install google-sparsehash googler google-sparsehash 
+brew install solarus google-sql-tool gpsd gpsbabel gpsim gputils gpx 
+brew install gr-osmosdr hackrf hashcat hexedit hfsutils hydra hyperkit 
+brew install hyperscan i2util icoutils ike-scan imessage-ruby inetutils 
+brew install ino ioping ipcalc john-jumbo john keychain kotlin libexif 
+brew install libgsm libgusb libmms libmtp libnet libnfc libnfs liboauth 
+brew install libpcap libphonenumber libquantum  librsync librsvg 
+brew install librtlsdr libserialport libssh libssh2 libsvg libtensorflow 
+brew install libtrace libusb libusb-compat libutf libzip lolcode lsusb 
+brew install lzlib lzip metashell zlib 
+brew tap david-icracked/homebrew-websocketpp
+brew install websocketpp
+brew install --HEAD david-icracked/websocketpp/websocketpp
+brew tap david-icracked/idevicerestore
+brew install --HEAD david-icracked/idevicerestore/idevicerestore
+brew tap sidaf/homebrew-pentest
+brew tap stek29/homebrew-idevice
+IFS=$'\n'; for package in $(brew search pentest); do brew install $package; done
+IFS=$'\n'; for package in $(brew search homebrew-idevice); do brew install $package; done
+brew tap Homebrew/homebrew-services
+brew install Homebrew/homebrew-services
+brew tap homebrew/aliases
+brew tap homebrew/command-not-found
+brew install homebrew/aliases
+brew install homebrew/command-not-found
+brew tap b-ramsey/homebrew-kali
+IFS=$'\n'; for package in $(brew search homebrew-kali); do brew install $package; done
+brew tap varenc/ffmpeg
+brew install varenc/ffmpeg/ffmpeg
+brew tap mtigas/tor
+brew install mtigas/tor/tor
+brew tap kolen/homebrew-gnuradio
+brew tap infection/homebrew-infection
+brew install infection
+brew tap decors/cipherscan
+brew install --HEAD cipherscan
+brew install python
+brew cask install xquartz
+
+brew tap homebrew/python
+brew install matplotlib
+brew install numpy
+brew install scipy
+brew install sphinx
+
+# Dependencies
+pip install Cheetah
+pip install lxml
+pip install sphinx
+pip install Pillow
+brew install gsl
+brew install pygtk
+brew install wxpython
+brew install boost
+brew install cppunit
+brew install fftw
+brew install zeromq
+brew install doxygen
+brew install uhd
+brew install portaudio
+brew install sdl
+brew install jack
+brew install swig
+brew install sip
+brew tap gsong2014/homebrew-sdr
+brew install cmake   # install cmake-3.3.2 since gnuradio doesnt like newer versions
+
+# version 3.7.10
+brew install gnuradio
+brew install librtlsdr 
+brew install bladerf --HEAD
+brew install gr-osmosdr gr-baz --HEAD
+brew install gqrx
+brew install libosmocore --HEAD
+brew install gr-gsm --HEAD
+brew install nlohmann-json pygtk
+pip2 install six
+brew install pygobject3 gtk+3
+
+brew install -d -v --build-from-source --with-python2 soapysdr
+brew install -d -v --build-from-source --with-images limesuite
+brew install -d -v --build-from-source --HEAD gsong2014/sdr/volk
+brew install -d -v --build-from-source --HEAD gsong2014/sdr/pothos-lime
+brew install -d -v --build-from-source --HEAD gsong2014/sdr/gnuradio
+brew install -d -v --build-from-source librtlsdr
+brew install -d -v --build-from-source --HEAD gsong2014/sdr/gr-fcdproplus
+brew install -d -v --build-from-source --HEAD gsong2014/sdr/gr-osmosdr
+brew install -d -v --build-from-source gsong2014/sdr/gr-limesdr
+
+export GRC_BLOCKS_PATH=$(ls -d /usr/local/opt/*/share/gnuradio/grc/blocks | tr '$\n' :)
+brew tap gsong2014/homebrew-sdr
+brew tap niobos/homebrew-sdr
+IFS=$'\n'; for package in $(brew search homebrew-sdr); do brew install $package; done
+
