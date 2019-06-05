@@ -11,5 +11,5 @@ buildcheckt
 buildcheck
 find /Users/*h/Library/Developer/Xcode/ -name "*.dSYM" | xargs -I \{\} Pods/Fabric/upload-symbols -gsp ./Studioso\ Student/Student\ App/Core/GoogleService-Info.plist -p ios \{\}
 if [ ! -z cmdBuildC ]; then 
-osascript -e 'display notification "Successfully finished processing the build! Check Appstore Connect!" with title "Check AppStore Connect!" sound name "default"'
+osascript -e "display notification \"Successfully finished processing the build! Check Appstore Connect!\" with title \"Check AppStore Connect!\" sound name \"default\""
 fi

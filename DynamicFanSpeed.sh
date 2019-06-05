@@ -1,6 +1,6 @@
 #!/bin/bash
-sudo smc -k F0Mx -w 99e9
-sudo smc -k F1Mx -w 99e9
+sudo smc -k F0Mx -w 99z9
+sudo smc -k F1Mx -w 99z9
 echo "done setting max speed "
 #function convertFpToInt() {
 function c_f2i() {
@@ -37,11 +37,11 @@ function writeMinFanSpeed() {
 sensor=`sensorArray | cut -d '.' -f 1`
 echo $sensor
 #fanSpeed=$((`sensorArray` * 1000))
-tooHot=`bc -l <<< "$sensor*1000"`
+tooHot=`bc -l <<< "($sensor*1000)"`
 echo $tooHot
 fanSpeed=`formatCorrectionF $tooHot`
 echo $fanSpeed
 writeMinFanSpeed $fanSpeed
 echo done 
-
+osascript -e "display notification \"Fanspeed set to $fanSpeed; temp $sensor; $tooHot\" with title \"Fanspeed\" sound name \"default\""
 

@@ -1,4 +1,4 @@
-#mobiledevice
+#mobiledevice #opencv
 brew tap caskroom/cask
 brew cask install google-chrome
 brew install wakeonlan mosh nexus nutcracker sendemail tidy-html5 truecrack tty-solitaire tty-clock typespeed hatari spoof-mac rsync rclone 
@@ -19,7 +19,7 @@ brew install libmtp linnet libnfc liboauth libphonenumber libpng libquantum libr
 brew install librsync libssh libssh2 libtensorflow libusb libusb-compat logrotate lz4
 brew install lzip gzip bzip2 mac-robber make md5sha1sum memcache-top memcached memcacheq minio minio-mc mkclean mkdocs mksh mktorrent mobliedevice 
 brew install moon-buggy moreutils mosh morse ncrack netcat nexus nfcutils ninvaders 
-brew install nmap node nsnake ntfs-3g nutcracker cowsay open-mesh opencv openjpeg openssl openssh openvpn ophcrack osm-gps-map osxutils p7zip  parallel pdf2image pdf2htmlex pdfcrack pdftohtml pip-completion png2ico 
+brew install nmap node nsnake ntfs-3g nutcracker cowsay open-mesh openjpeg openssl openssh openvpn ophcrack osm-gps-map osxutils p7zip  parallel pdf2image pdf2htmlex pdfcrack pdftohtml pip-completion png2ico 
 brew install ponysay pow powerman pssh pwntools python3 python qauntlib randomize-lines  
 brew install rclone rsync redo rename rkhunter rmtrash trash safe-rm screen sendemail 
 brew install slackcat smali snappy sonar-scanner spaceinvaders-go sqlmap squid ssh-audit ssh-copy-id ssh-vault sshfs sshguardsslh ssllabs-scan sslscan sslspit 

@@ -40,6 +40,42 @@ sudo rm -rf /Users/*/Library/Developer/XcodeDerivedData/*
 sudo rm -rf /Users/*/Library/Developer/Archives/*
 sudo rm -rf /Users/*/Library/Developer/Archives/*
 sudo rm -rf /Users/*/Library/Developer/Products/*
+sudo rm -rf ~/Library/Logs/CoreSimulator/*
+sudo rm -rf /Users/*/Library/CoreSimulator/*
+sudo rm -rf ~/Library/Application\ Support/Google\ Play\ Music\ Desktop\ Player/Cache/*
+sudo rm -rf /Users/*/Library/Application\ Support/Google\ Play\ Music\ Desktop\ Player/Cache/*
+sudo rm -rf ~/Library/Developer/Xcode/iOS\ DeviceSupport/*/Symbols/System/Library/Caches
+sudo rm -rf /Users/*/Library/Developer/Xcode/iOS\ DeviceSupport/*/Symbols/System/Library/Caches
+sudo rm -rf ~/Library/Group\ Containers/*.group.com.apple.configurator/Library/Caches/*
+sudo rm -rf ~/Library/Containers/com.tinyspeck.slackmacgap/Data/Library/Application\  Support/Slack/logs/*
+sudo rm -rf /Users/*/Library/Group\ Containers/*.group.com.apple.configurator/Library/Caches/*
+sudo rm -rf /Users/*/Library/Containers/com.tinyspeck.slackmacgap/Data/Library/Application\  Support/Slack/logs/*
+sudo rm -rf /Users/*/Library/Containers/com.tinyspeck.slackmacgap/Data/Library/Application\ Support/Slack/logs/*
+sudo rm -rf ~/Library/Application\ Support/Google/Chrome/Default/Service\ Worker/CacheStorage/*
+sudo rm -rf /Users/*/Library/Application\ Support/Google/Chrome/Default/Service\ Worker/CacheStorage/*
+sudo rm -rf ~/Library/Application\ Support/Google/Chrome/Profile\ 1/Application\ Cache/Cache/*
+sudo rm -rf /Users/*/Library/Application\ Support/Google/Chrome/Profile\ 1/Application\ Cache/Cache/*
+sudo rm -rf ~/Library/Application\ Support/Google/Chrome/Profile\ 1/Application\ Cache/*
+sudo rm -rf /Users/*/Library/Application\ Support/Google/Chrome/Profile\ 1/Application\ Cache/*
+sudo rm -rf /var/log/DiagnosticMessages/*
+sudo rm -rf /var/log/asl/*
+sudo rm -rf ~/Library/Application\ Support/iStat\ Menus/databases/*
+sudo rm -rf /Users/*/Library/Application\ Support/iStat\ Menus/databases/*
+sudo rm -rf ~/Library/Application\ Support/minecraft
+sudo rm -rf /Users/*/Library/Application\ Support/minecraft
+sudo rm -rf ~/Library/Application\ Support/CloudDocs
+sudo rm -rf /Users/*/Library/Application\ Support/CloudDocs
+sudo rm -rf ~/Library/Containers/com.apple.Safari/Data/Library/Caches/*
+sudo rm -rf /Users/*/Library/Containers/com.apple.Safari/Data/Library/Caches/*
+sudo rm -rf ~/.npm/_cacache/*
+sudo rm -rf /Users/*/.npm/_cacache/*
+sudo rm -rf ~/.npm/_cacache/*
+sudo rm -rf ~/.android/*
+sudo rm -rf /Users/*/.android/*
+sudo rm -rf ~/.itmstransporter/*
+sudo rm -rf /Users/*/.itmstransporter/*
+sudo rm -rf ~/.cargo/registry/index/*
+sudo rm -rf /Users/.cargo/registry/index/*
 
 #sudo rm -rf /var/folders/*
 #sudo chmod a+x -R /var/folders
