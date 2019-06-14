@@ -70,8 +70,8 @@ sudo rm -rf /Users/*/Library/Containers/com.apple.Safari/Data/Library/Caches/*
 sudo rm -rf ~/.npm/_cacache/*
 sudo rm -rf /Users/*/.npm/_cacache/*
 sudo rm -rf ~/.npm/_cacache/*
-sudo rm -rf ~/.android/*
-sudo rm -rf /Users/*/.android/*
+#sudo rm -rf ~/.android/*
+#sudo rm -rf /Users/*/.android/*
 sudo rm -rf ~/.itmstransporter/*
 sudo rm -rf /Users/*/.itmstransporter/*
 sudo rm -rf ~/.cargo/registry/index/*
