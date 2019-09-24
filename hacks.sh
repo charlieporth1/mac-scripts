@@ -195,3 +195,7 @@ defaults write com.apple.appstore WebKitDeveloperExtras -bool true
 defaults write com.apple.appstore ShowDebugMenu -bool true
 
 
+defaults write NSGlobalDomain NSAppSleepDisabled -bool NO
+defaults write com.apple.CrashReporter UseUNC 0
+
+defaults write /Library/Preferences/com.apple.security GKAutoRearm -bool false

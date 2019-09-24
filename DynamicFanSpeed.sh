@@ -1,5 +1,5 @@
 #!/bin/bash
-PATH=$PATH=/Library/Frameworks/Python.framework/Versions/3.6/bin:/Users/charlieporth/.rbenv/shims:/usr/local/opt/libxml2/bin:/Users/charlieporth/.cargo/bin:/Users/charlieporth/.cargo/bin:/usr/local/opt/node@8/bin:/usr/local/opt/sqlite/bin:/usr/local/opt/sqlite/bin:/Users/charlieporth/go//bin:/Users/charlieporth/Downloads//flutter/bin:/usr/local/opt/libiconv/bin:/usr/local/opt/openssl/bin:/usr/local/opt/sqlite/bin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:~/Library/Android/sdk/tools:/usr/local/bin:/usr/bin:/usr/local/sbin:/sbin:/bin:/usr/sbin:/opt/local/bin:/opt/local/sbin:/opt/metasploit-framework/bin/Library/Frameworks/Python.framework/Versions/3.6/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/local/bin:/opt/local/sbin:/opt/metasploit-framework/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin :/User/charlieporth//Library/Android/sdk/tools:/usr/local/sbin :/Library/TeX/texbin:/opt/X11/bin:/Applications/Wireshark.app/Contents/MacOS:/Library/Frameworks/Python.framework/Versions/3.6/bin :/Users/charlieporth/google-cloud-sdk/bin/:/Users/charlieporth/Library/Android/sdk//tools:/Users/charlieporth/Library/Android/sdk//platform-tools:/Users/charlieporth/google-cloud-sdk/bin:/Users/charlieporth/google-cloud-sdk/bin/Library/Frameworks/Python.framework/Versions/3.6/bin:~/Library/Android/sdk/tools/bin/:/Users/charlieporth/.cargo/bin:/bin:/sbin/usr/local/bin:/usr/local/sbin:/usr/sbin:/usr/bin:/Users/charlieporth/.local/bin:/opt/metasploit-framework/bin:/Users/charlieporth/platform-tools:/Users/charlieporth/miniconda3/bin:/Users/charlieporth/.opam/system/bin:/Users/charlieporth/.opam/system/sbin:/opt/X11/bin:/usr/local/opt/make/libexec/gnubin:/usr/libexec:/usr/local/opt/*/libexec::/Users/charlieporth/google-cloud-sdk/bin:/Users/charlieporth/go-workspace/bin:/usr/local/opt/go/libexec/bin
+PATH=$PATH=/Library/Frameworks/Python.framework/Versions/3.6/bin:/usr/local/opt/node@8/bin:/usr/local/opt/sqlite/bin:/Users/charlieporth/Downloads//flutter/bin:/usr/local/opt/libiconv/bin:/usr/local/opt/openssl/bin:/usr/local/opt/sqlite/bin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:/usr/bin:/usr/local/sbin:/sbin:/bin:/usr/sbin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/opt/X11/bin:/Applications/Wireshark.app/Contents/MacOS:/Library/Frameworks/Python.framework/Versions/3.6/bin:/Library/Frameworks/Python.framework/Versions/3.6/bin:/bin:/sbin/usr/local/bin:/usr/local/sbin:/usr/sbin:/usr/bin:/Users/charlieporth/.local/bin:/opt/metasploit-framework/bin:/opt/X11/bin:/usr/local/opt/make/libexec/gnubin:/usr/libexec:/usr/local/opt/*/libexec:/usr/local/opt/go/libexec/bin
 #/usr/local/bin/smc
 sudo /usr/local/bin/smc -k F0Mx -w 99z9
 sudo /usr/local/bin/smc -k F1Mx -w 99z9
@@ -36,8 +36,7 @@ function writeMinFanSpeed() {
         sudo /usr/local/bin/smc -k F0Mn -w $speed
         sudo /usr/local/bin/smc -k F1Mn -w $speed
 }
-while true 
-do
+function run() {
 	sensor=`sensorArray | cut -d '.' -f 1`
 	echo "sensor  $sensor"
 	#fanSpeed=$((`sensorArray` * 1000))
@@ -48,7 +47,10 @@ do
 	writeMinFanSpeed $fanSpeed
 	echo "done "
 	echo "sleeping 5min"
-	sleep 300s
 #osascript -e "display notification \"Fanspeed set to $fanSpeed; temp $sensor; $tooHot\" with title \"Fanspeed\" sound name \"default\""
-
+}
+while true
+do 
+	run
+	sleep 300s
 done

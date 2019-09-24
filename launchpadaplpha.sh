@@ -3,7 +3,7 @@
 sudo rm -rf ~/dbtitlesalpha.txt
 sleep 2s
 #sqlite3 -header -column $TMPDIR../0/com.apple.dock.launchpad/db/db  
-sqlite3  $TMPDIR../0/com.apple.dock.launchpad/db/db "select title from apps order by title" > ~/dbtitlesalpha.txt
+sqlite3 $(getconf DARWIN_USER_DIR)/com.apple.dock.launchpad/db/db "select title from apps order by title" > ~/dbtitlesalpha.txt
 declare -a myarray
 sleep 2s
 # myarray
@@ -29,7 +29,14 @@ echo "testo f array in alphabetic order ${a[1]},${a[2]},${a[3]},${a[4]}"
 for (( c = 0; c<=${#a[@]}; c++ ))
 do
 echo "on number "$c "out of"  ${#a[@]}
-sqlite3 -header -column $TMPDIR../0/com.apple.dock.launchpad/db/db "UPDATE apps SET item_id='$c' WHERE title LIKE '%${#a[@]}%'"
+sqlite3 -header -column $(getconf DARWIN_USER_DIR)/com.apple.dock.launchpad/db/db "UPDATE apps SET item_id='$c' WHERE title LIKE '%${#a[@]}%'"
+
+done
+echo done 
+for (( c = 0; c<=${#a[@]}; c++ ))
+do
+echo "on number "$c "out of"  ${#a[@]}
+sqlite3 -header -column $(getconf DARWIN_USER_DIR)/com.apple.dock.launchpad/db/db "UPDATE apps SET item_id=$c WHERE title LIKE '%${#a[@]}%'"
 
 done
 echo done 

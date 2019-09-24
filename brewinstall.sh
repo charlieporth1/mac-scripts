@@ -212,3 +212,7 @@ brew tap niobos/homebrew-sdr
 IFS=$'\n'; for package in $(brew search homebrew-sdr); do brew install $package; done
 
 for install in `pip search google cloud sdk | awk '{print $1}'`; do pip install $install; done
+brew cask install dnscrypt
+brew cask install dnscrypt-wrapper dnscrypt-proxy 
+brew cask install    satellite-eyes google-trends google-nik-collection google-drive-file-stream
+

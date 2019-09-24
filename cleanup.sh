@@ -36,10 +36,10 @@ sudo rm -rf ~/.electron/
 sudo rm -rf /Users/*/.electron/
 sudo rm -rf ~/.meteor 
 sudo rm -rf /Users/*/.meteor 
-sudo rm -rf /Users/*/Library/Developer/XcodeDerivedData/*
-sudo rm -rf /Users/*/Library/Developer/Archives/*
-sudo rm -rf /Users/*/Library/Developer/Archives/*
-sudo rm -rf /Users/*/Library/Developer/Products/*
+#sudo rm -rf /Users/*/Library/Developer/XcodeDerivedData/*
+#sudo rm -rf /Users/*/Library/Developer/Archives/*
+#sudo rm -rf /Users/*/Library/Developer/Archives/*
+#sudo rm -rf /Users/*/Library/Developer/Products/*
 sudo rm -rf ~/Library/Logs/CoreSimulator/*
 sudo rm -rf /Users/*/Library/CoreSimulator/*
 sudo rm -rf ~/Library/Application\ Support/Google\ Play\ Music\ Desktop\ Player/Cache/*
