@@ -216,3 +216,5 @@ brew cask install dnscrypt
 brew cask install dnscrypt-wrapper dnscrypt-proxy 
 brew cask install    satellite-eyes google-trends google-nik-collection google-drive-file-stream
 
+npm install -g @rafaelrinaldi/whereami
+npm install -g ipa-deploy

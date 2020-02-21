@@ -24,3 +24,5 @@ defaults write com.apple.dt.Xcode IDESourceKitServiceLogLevel -int 3
 defaults write com.apple.dt.Xcode ShowDVTDebugMenu -bool YES
 defaults write com.apple.dt.Xcode ApplePersistenceIgnoreState -bool YES
 defaults write com.apple.iphonesimulator AllowFullscreenMode -bool YES
+defaults write com.apple.dt.Xcode BuildSystemScheduleInherentlyParallelCommandsExclusively -bool NO
+#defaults delete com.apple.dt.Xcode BuildSystemScheduleInherentlyParallelCommandsExclusively
