@@ -1,0 +1,6 @@
+#!/bin/bash
+if [ "$@" = 0 ]; then
+  afplay -v 2 /System/Library/Sounds/Blow.aiff &
+else
+  afplay -v 2 /System/Library/Sounds/Sosumi.aiff &
+fi

@@ -1,0 +1,2 @@
+#!/bin/bash
+for f in $(pgrep 'Backup and Sync'; pgrep 'FinderSyncAPIExtension'); do renice +20 -p $f; done
