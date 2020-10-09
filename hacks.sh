@@ -4,7 +4,7 @@ defaults write com.apple.dock "expose-group-by-app" -bool true
 defaults write com.apple.dock expose-animation-duration -float 0.1
 defaults write NSGlobalDomain AppleFontSmoothing -int 2
 defaults write com.apple.BezelServices kDimTime -int 300
-defaults write NSGlobalDomain KeyRepeat -float 0.000000000000000000000001
+defaults write NSGlobalDomain KeyRepeat -float 0.0001
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 sudo defaults write /Library/Preferences/.GlobalPreferences.plist _HIEnableThemeSwitchHotKey -bool true
 defaults write com.apple.DiskUtility DUDebugMenuEnabled -bool true
@@ -49,7 +49,7 @@ defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
 # defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
 # defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClickBehavior -int 1
 # defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
-
+defaults write com.apple.finder QuitMenuItem -bool true; killall Finder
 
 
 
@@ -199,3 +199,12 @@ defaults write NSGlobalDomain NSAppSleepDisabled -bool NO
 defaults write com.apple.CrashReporter UseUNC 0
 
 defaults write /Library/Preferences/com.apple.security GKAutoRearm -bool false
+defaults write com.apple.sidecar.display AllowAllDevices -bool true; defaults write com.apple.sidecar.display hasShownPref -bool true; open /System/Library/PreferencePanes/Sidecar.prefPane
+defaults write com.apple.menuextra.battery ShowTime -string "YES"
+defaults write com.apple.dock pinning middle;killall Dock
+defaults write com.apple.dock hide-mirror -bool true;killall Dock
+defaults write com.apple.dock launchanim -bool false
+defaults write com.apple.screencapture disable-shadow -bool true
+killall SystemUIServer
+sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
+defaults write com.apple.loginwindow PowerButtonSleepsSystem -bool no
