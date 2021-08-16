@@ -1,6 +1,11 @@
-#mobiledevice #opencv
-brew tap caskroom/cask
-brew cask install google-chrome
+#!/bin/bash
+pip install --user glances
+npm install gtop -g
+brew install hyperfine
+brew install gping 
+brew install procs
+brew cask install android-platform-tools
+brew install google-cloud-sdk 
 brew install wakeonlan mosh nexus nutcracker sendemail tidy-html5 truecrack tty-solitaire tty-clock typespeed hatari spoof-mac rsync rclone 
 brew install advancescan aescrypt-packetizer aescrypt aespipe aircrack-ng airspy ansiweather  
 brew install apktool arp-scan arp-sk arpack arping arpoison ascii atari800 automake autopsy autossh 
@@ -27,12 +32,6 @@ brew install tcpkali tcptrace tcptraceroute telnet thc-pptp-bruter thefuck tidy-
 brew install tor torsocks trash tree truecrack ttyd tty-clock tty-solitaire u-boot-tools 
 brew install typespeed unzip unrar zip wget whois wifi-password wine wireguard-tools 
 brew install wireshark wirouter_keyrec wordplay wordnet wpcli-comletion wpscan x11vnc xtensor yara 
-brew tap busterc/tap
-brew install osx-iso
-brew tap blacktop/tap
-brew install lporg  
-brew install parallel 
-brew tap chiayolin/cask
 brew install whereami acme acmetool admesh afsctool 
 brew install arm-linux-gnueabihf-binutils arp-sk arpoison arpack asciidoc arp-scan 
 brew install atari800 auto-scaling autocode autoconf autogen automake autopsy 
@@ -76,7 +75,7 @@ brew install wordnet wordplay antiword autoenv bsdiff bsdmake c2048 cracklib
 brew install ddd disktype dnstop fcrackzip gnu-which gnu-sed gnu-time gnu-tar 
 brew install hostdb netdata nethack netcat netcat6 nethacked jam libarchive 
 brew install libav libchaos libconfig libffi libopennet  zzz 
- brew install rustc-completion rust docker  cargo-completion 
+brew install rustc-completion rust docker  cargo-completion 
 brew install git-utils cvsutils patchutils nfcutils  icoutils desktop-file-utils t1utils num-utils  hfsutils 
 #moreutils idutils
 brew install c2048 chkrootkit  ansiweather  arm-linux-gnueabihf-binutils 
@@ -90,23 +89,8 @@ brew install hashcat hashcash hello hexcurse hexedit iozone jam jailkit john
 brew install john-jumbo kubernetes-helm kubernetes-cli md5sha1sum md5deep memcache-top
 brew install memcached memcacheq minicom mosh nfcutils ncrack nsnake  ntfs-3g 
 brew install nyancat  patchutils png2ico  protobuf  protobuf-swift pv 
-brew tap choppsv1/term24
-brew install choppsv1/term24/emacs
-brew install choppsv1/term24/vim
-brew install choppsv1/term24/tmux
-brew install choppsv1/term24/emacs-mac
 brew install aircrack-ng  nikto colordiff debianutils distribution espeak  
 brew install exiftool exiftag gr-osmosdr hashcash heartbeat
-brew cask install grammarly adguard android-platform-tools audio-hijack battery-time-remaining battery-report 
-brew cask install chameleon-ssd-optimizer chrome-remote-desktop-host chrome-devtools crunch cubicsdr cutesdr dnscrypt dsp-radio 
-brew cask install emacs filezilla fing firebase-admin google-cloud-sdk google-chrome google-backup-and-sync 
-brew cask install google-adwords-editor google-earth-pro google-earth-web-plugin google-featured-photos google-hangouts 
-brew cask install google-drive-file-stream google-nik-collection google-trends google-web-designer hacker-menu hackety-hack 
-brew cask install hackhands hazel3 sdrdx icolors intel-haxm intel-power-gadget ip-scanner ios-console ipsecuitas iridium jitouch 
-brew cask install kubernetic leap-motion clocksaver menubar-colors menubarfilter metasploit meteorologist minecraft 
-brew cask install minecraft-server minecraftpe mkchromecast mycloud myphone osxfuse powershell  power-manager-pro  
-brew cask install protonmail-bridge pulse-sms satellite-eyes sketch slack smcfancontrol stargazer tor-browser torguard 
-brew cask install veracrypt wakeonlan windows95 wine-stable xquartz xscreensaver zurl 
 brew install avrdude aescrypt app-engine-java app-engine-python arm-linux-gnueabihf-binutils base64
 brew install beagle bettercap bluetoothconnector blueutil bogofilter brew-gem cityhash
 brew install cliclick click cmu-pocketsphinx cmu-sphinxbase colormake colordiff 
@@ -127,34 +111,6 @@ brew install libpcap libphonenumber libquantum  librsync librsvg
 brew install librtlsdr libserialport libssh libssh2 libsvg libtensorflow 
 brew install libtrace libusb libusb-compat libutf libzip lolcode lsusb 
 brew install lzlib lzip metashell zlib 
-brew tap david-icracked/homebrew-websocketpp
-brew install websocketpp
-brew install --HEAD david-icracked/websocketpp/websocketpp
-brew tap david-icracked/idevicerestore
-brew install --HEAD david-icracked/idevicerestore/idevicerestore
-brew tap sidaf/homebrew-pentest
-brew tap stek29/homebrew-idevice
-IFS=$'\n'; for package in $(brew search pentest); do brew install $package; done
-IFS=$'\n'; for package in $(brew search homebrew-idevice); do brew install $package; done
-brew tap Homebrew/homebrew-services
-brew install Homebrew/homebrew-services
-brew tap homebrew/aliases
-brew tap homebrew/command-not-found
-brew install homebrew/aliases
-brew install homebrew/command-not-found
-brew tap b-ramsey/homebrew-kali
-IFS=$'\n'; for package in $(brew search homebrew-kali); do brew install $package; done
-brew tap varenc/ffmpeg
-brew install varenc/ffmpeg/ffmpeg
-brew tap mtigas/tor
-brew install mtigas/tor/tor
-brew tap kolen/homebrew-gnuradio
-brew tap infection/homebrew-infection
-brew install infection
-brew tap decors/cipherscan
-brew install --HEAD cipherscan
-brew install python
-brew cask install xquartz
 
 brew tap homebrew/python
 brew install matplotlib
@@ -181,40 +137,21 @@ brew install sdl
 brew install jack
 brew install swig
 brew install sip
-brew tap gsong2014/homebrew-sdr
 brew install cmake   # install cmake-3.3.2 since gnuradio doesnt like newer versions
 
-# version 3.7.10
-brew install gnuradio
-brew install librtlsdr 
-brew install bladerf --HEAD
-brew install gr-osmosdr gr-baz --HEAD
-brew install gqrx
-brew install libosmocore --HEAD
-brew install gr-gsm --HEAD
-brew install nlohmann-json pygtk
-pip2 install six
-brew install pygobject3 gtk+3
-
-brew install -d -v --build-from-source --with-python2 soapysdr
-brew install -d -v --build-from-source --with-images limesuite
-brew install -d -v --build-from-source --HEAD gsong2014/sdr/volk
-brew install -d -v --build-from-source --HEAD gsong2014/sdr/pothos-lime
-brew install -d -v --build-from-source --HEAD gsong2014/sdr/gnuradio
-brew install -d -v --build-from-source librtlsdr
-brew install -d -v --build-from-source --HEAD gsong2014/sdr/gr-fcdproplus
-brew install -d -v --build-from-source --HEAD gsong2014/sdr/gr-osmosdr
-brew install -d -v --build-from-source gsong2014/sdr/gr-limesdr
-
-export GRC_BLOCKS_PATH=$(ls -d /usr/local/opt/*/share/gnuradio/grc/blocks | tr '$\n' :)
-brew tap gsong2014/homebrew-sdr
-brew tap niobos/homebrew-sdr
-IFS=$'\n'; for package in $(brew search homebrew-sdr); do brew install $package; done
-
-for install in `pip search google cloud sdk | awk '{print $1}'`; do pip install $install; done
-brew cask install dnscrypt
-brew cask install dnscrypt-wrapper dnscrypt-proxy 
-brew cask install    satellite-eyes google-trends google-nik-collection google-drive-file-stream
-
-npm install -g @rafaelrinaldi/whereami
-npm install -g ipa-deploy
+brew install magic_unicorn xxhash x264 x265 wireguard-go 	wireguard-tools wirouter_keyrec wolfssl windows-exploit-suggester unbound usb.ids transcrypt
+brew install truecrack tree trash theharvester the_harvester tcpsplit tcpkali sslyze sslscan-static sslscan sleuthkit simply_email sec_lists serializekiller screen scrape_dns rubberband rkhunter
+brew install powersploit posh-secmod patchutils osx-iso ophcrack openh264 openjdk nutcracker nsnake npth nmap nikto nishang nexus nfcutils nethack nethacked netdiscover netdata netcat netcat6 ncrack ncurses
+brew install mobiledevice metashell mhash md5sha1sum md5deep mcrypt google-sparsehash  google-sql-tool	gphotos-uploader-cli gpsbabel gpsd gputils gr-osmosdr hackrf hashcat hashcash 
+brew install hashid header_check hexcurse hexedit hfsutils httrack hyperkit hyperscan i2util ike-scan impacket jam jailkit iozone john kotlin launchctl-completion lcrack lsusb lsof lolcode logrotate 
+brew install google-benchmark google-authenticator-libpam gdrive geoip dynamips dscanner dnstracer dnstop dnsrecon dnsmap dns2tcp dmg2img crunch ddrescue dhcpdump dhex bluetoothconnector bluepill arp-sk 
+brew install arp-scan arpack arping arpoison arp-scan apktool  antiword airspy aescrypt aescrypt-packetizer aespipe aircrack-ng adns  advancescan aardvark_shell_utils	
+brew search utils | xargs brew install 
+brew search kit | xargs brew install 
+ 
+brew install knot
+brew install parallel --force
+brew link --overwrite parallel
+brew tap ipinfo/tap
+brew install ipinfo-cli
+brew install grepip
